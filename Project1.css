@@ -1,5 +1,9 @@
 body {
-  background-color: #80cce4;
+  background-image: url("Background.png");
+  background-repeat: no-repeat;
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image within the container */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
   color: #2e879a;
   font-family: "Lora", serif;}
 button {
@@ -14,10 +18,10 @@ button {
 .container{
   display: flex
 grid-template-columns: auto auto auto;
-  background-color: #ffffff;
+  background-color: #aee8f3;
   font-family: "Lora", serif;
   padding: 10px;}
-.gallery{display: inline-block; border: 10px solid #80cce4; margin: 10px; width: 200px;}
+.gallery{display: inline-block; border: 10px solid #2e879a; margin: 10px; width: 350px;}
 .gallery .gallerytext{padding: 10px; text-align: center;}
 .gallery:hover{border: 10px solid #de1f2c;}
 .gallery img{width: 100%; height: auto;}
@@ -32,15 +36,13 @@ grid-template-columns: auto auto auto;
 }
 
 h1{
-  -webkit-text-stroke: 0.5px white;}
+  border: white;}
 
 .item:hover
 {
     transform: scale(1.5);
     margin-right: 40px;
-    margin-left: 26px;
+    margin-left: 30px;
 }
 
-p
-
-  footer{position: absolute; bottom: -100%;}
+footer{position: absolute; bottom: -100%;}
