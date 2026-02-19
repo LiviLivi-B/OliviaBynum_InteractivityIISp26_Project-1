@@ -8,7 +8,10 @@ body {
   font-family: "Lora", serif;}
 button {
     background-color: #aee8f3;
-    font-family: "Lora", serif;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: light;
     padding: 10px;
     }
 
@@ -37,8 +40,10 @@ grid-template-columns: auto auto auto;
     transition: all 0.4s ease;
 }
 
-h1{
-  border: white;}
+h1{font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: light;}
 
 
 .item:hover
