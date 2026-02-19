@@ -1,22 +1,35 @@
 body {
-  background-color: #80cce4;
+  background-image: url("Background.png");
+  background-repeat: no-repeat;
+  background-size: 100%; /* Ensures the image covers the entire container */
+  background-position: 100%; /* Centers the image within the container */
+  background-attachment: fixed; /* Keeps the image fixed while scrolling */
   color: #2e879a;
   font-family: "Lora", serif;}
 button {
     background-color: #aee8f3;
-    font-family: "Lora", serif;
+  font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: light;
     padding: 10px;
     }
 
 .center{position: absolute; left: 50%; transform: translate(-50%,0);}
+.center2{position: relative; left: 85%; transform: translate(-50%,0);}
+.center3{position: relative; left: 75%; transform: translate(-50%,0);}
 .container{
-  display: flex
+  display: inline-block
 grid-template-columns: auto auto auto;
-  background-color: #ffffff;
+  background-color: #aee8f3;
   font-family: "Lora", serif;
   padding: 10px;}
-
-.item
+.gallery{display: inline-block; border: 10px solid #032d36; margin: 10px; width: 350px;}
+.gallery .gallerytext{padding: 10px; text-align: center; background-color: white;}
+.gallery:hover{border: 10px solid #de1f2c;}
+.gallerytext:hover{color: #de1f2c;}
+.gallery img{width: 100%; height: auto;}
+.gallery video{width: 100%; height: auto;}
 {
     position: relative;
     display: inline-block;
@@ -27,16 +40,17 @@ grid-template-columns: auto auto auto;
     transition: all 0.4s ease;
 }
 
-h1{
-  -webkit-text-stroke: 0.5px white;}
+h1{font-family: "Bitcount Grid Double", system-ui;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: light;}
+
 
 .item:hover
 {
     transform: scale(1.5);
     margin-right: 40px;
-    margin-left: 26px;
+    margin-left: 30px;
 }
 
-p
-
-  footer{position: absolute; bottom: -100%;}
+footer{position: absolute; bottom: -100%;}
